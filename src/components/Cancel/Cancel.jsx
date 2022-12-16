@@ -1,5 +1,6 @@
 import React from 'react'
 import { Form, Button, Alert } from "react-bootstrap"
+import { Link } from "react-router-dom";
 
 function Cancel() {
   return (
@@ -27,9 +28,11 @@ function Cancel() {
             placeholder="Referans Numarası"
             className="mb-3"
           />
-          <Button type="submit" variant="success" className="px-4 mb-4 w-100">
-            İptal Et
-          </Button>
+          <Link to="/alertcancel">
+            <Button type="submit" variant="success" className="px-4 mb-4 w-100">
+              İptal Et
+            </Button>
+          </Link>
           <Form.Group>
             <Alert.Link
               variant="danger"

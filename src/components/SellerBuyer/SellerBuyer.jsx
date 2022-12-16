@@ -1,9 +1,11 @@
 import React from "react";
 import { Form, Button, Row, ButtonToolbar, Col } from "react-bootstrap";
+import { Link } from "react-router-dom"
+
 function SellerBuyer() {
   return (
     <div className="vh-100 w-100 mx-auto my-5">
-      <Form className="w-25 mx-auto">
+      <Form className="w-50 mx-auto border border-dark p-5">
         <Form.Label className="fw-normal fs-5 mb-3">
           SATICI BİLGİLERİ
         </Form.Label>
@@ -60,12 +62,16 @@ function SellerBuyer() {
         </Form.Group>
         <Row>
           <ButtonToolbar className="justify-content-end mt-2">
-            <Button variant="ligth" className="border-secondary">
-              Vazgeç
-            </Button>
-            <Button variant="primary" className="mx-1">
-              Devam
-            </Button>
+            <Link to="/"> 
+              <Button variant="ligth" className="border-secondary">
+                Vazgeç
+              </Button>
+            </Link>
+            <Link to="/sms">
+              <Button variant="primary" className="mx-1">
+                Devam
+              </Button>
+            </Link>
           </ButtonToolbar>
         </Row>
       </Form>

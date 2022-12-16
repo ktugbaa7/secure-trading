@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom"
 
 function Seller() {
   return (
@@ -95,9 +96,10 @@ function Seller() {
           </Form.Text>
 
           <Col>
+          <Link to="/verification">
             <Button type="submit" variant="success" className="px-4">
               Talep Oluştur
-            </Button>
+            </Button></Link>
           </Col>
         </Row>
       </Form>

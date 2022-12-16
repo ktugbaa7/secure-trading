@@ -3,14 +3,14 @@ import { Form, Button, Row } from "react-bootstrap";
 function TransferInfo() {
   return (
     <div className="vh-100 w-100 mx-auto mt-5">
-      <Form className="w-25 mx-auto">
+      <Form className="w-25 mx-auto rounded border border-primary px-2">
         <Form.Group>
           <Form.Label className="fw-normal fs-5 mb-3">
             TRANSFER BİLGİLERİM
           </Form.Label>
           <Form.Select
             aria-label="Default select example"
-            className="mb-3 rounded-0 border-success"
+            className="mb-3 border-primary"
             size="lg"
           >
             <option>Banka Hesabı seçiniz...</option>
@@ -30,11 +30,11 @@ function TransferInfo() {
             type="text"
             placeholder=""
             size="sm"
-            className="rounded-0 mb-3"
+            className="border-primary mb-3"
           />
           <Row>
             <Form.Label className="fw-bold mb-3">TRANSFER AÇIKLAMASI</Form.Label>
-            <Form.Label className="fw-normal mb-3">ASDASD5A6SD</Form.Label>
+            <Form.Label className="fw-normal mb-3">Araç Bedeli</Form.Label>
             <Form.Label className="fw-bold mb-3">TRANSFER TUTARI</Form.Label>
             <Form.Label className="fw-normal mb-3">50.000,00 TL</Form.Label>
             <Form.Label className="fw-bold mb-3">MASRAF TUTARI</Form.Label>

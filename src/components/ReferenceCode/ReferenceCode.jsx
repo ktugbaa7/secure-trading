@@ -1,15 +1,20 @@
 import React from "react";
 import { Form, Button, Alert } from "react-bootstrap";
+import { Link } from "react-router-dom";
 function ReferenceCode() {
   return (
     <div className="vh-100 w-100 mx-auto mt-5">
       <Form className="w-25 mx-auto">
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label className="fs-4 mb-3">Referans Kodunu Giriniz.</Form.Label>
+          <Form.Label className="fs-4 mb-3">
+            Referans Kodunu Giriniz.
+          </Form.Label>
           <Form.Control type="text" placeholder="Referans Numarası" />
-          <Button variant="primary" type="submit" className="mt-3 px-4">
-            Tamam
-          </Button>
+          <Link to="/sellerbuyer">
+            <Button variant="primary" type="submit" className="mt-3 px-4">
+              Tamam
+            </Button>
+          </Link>
         </Form.Group>
         <Alert.Link
           variant="success"

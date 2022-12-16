@@ -3,7 +3,7 @@ import { Alert } from "react-bootstrap";
 function Completed() {
   return (
     <div className="vh-100 w-100 pt-5">
-      <Alert variant="success" className="w-50 mx-auto px-4 py-4">
+      <Alert variant="warning" className="w-50 mx-auto px-4 py-4">
         <Alert.Heading>Başvuru Tamamlandı!</Alert.Heading>
         <hr />
         <p>
@@ -12,7 +12,7 @@ function Completed() {
         </p>
         <hr />
         <Alert.Link
-          className="text-decoration-none text-success fw-normal"
+          className="text-decoration-none text-warning fw-normal"
           href="/"
         >
           Ana Sayfaya Dön

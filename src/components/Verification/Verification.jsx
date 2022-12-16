@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  Form,
-  Button,
-  Row,
-  ButtonToolbar,
-  CloseButton,
-} from "react-bootstrap";
+import { Form, Button, Row, ButtonToolbar, CloseButton } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Verification() {
   return (
@@ -28,12 +23,16 @@ function Verification() {
         </div>
         <Row>
           <ButtonToolbar className="justify-content-end mt-2">
-            <Button variant="ligth" className="border-secondary">
-              Vazgeç
-            </Button>
-            <Button variant="success" className="mx-1">
-              Devam
-            </Button>
+            <Link to="/">
+              <Button variant="ligth" className="border-secondary">
+                Vazgeç
+              </Button>
+            </Link>
+            <Link to="/completed">
+              <Button variant="warning" className="mx-1">
+                Devam
+              </Button>
+            </Link>
           </ButtonToolbar>
         </Row>
       </div>

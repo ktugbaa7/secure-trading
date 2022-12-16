@@ -1,5 +1,6 @@
 import React from "react";
 import { Alert } from "react-bootstrap";
+
 function AlertCancel() {
   return (
     <div className="vh-100 w-100 pt-5">

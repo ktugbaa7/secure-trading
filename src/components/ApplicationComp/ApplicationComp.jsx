@@ -1,5 +1,7 @@
 import React from 'react'
 import { Alert, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 function ApplicationComp() {
   return (
     <div className="vh-100 w-100 pt-5">
@@ -11,7 +13,7 @@ function ApplicationComp() {
         <p>Araç satış bedelini, seçeceğiniz banka hesabına <p className='text-decoration-underline mb-0'>TRANSFER BİLGİLERİM alanındaki bilgiler ile</p>transfer etmeniz gerekmektedir.</p><br />
         <p>İsterseniz, satış bedelini parça parça banka hesaplarımıza <p className='text-decoration-underline mb-0'>TRANSFER BİLGİLERİM alanındaki bilgiler ile</p> transfer edebilirsiniz.</p>
         <div className="d-flex justify-content-center">
-            <Button variant='outline-success' className='px-4'>Transfer Bilgilerimi Göster</Button>
+            <Link to="/transferinfo"><Button variant='outline-success' className='px-4'>Transfer Bilgilerimi Göster</Button></Link>
         </div>
       </Alert>
     </div>
